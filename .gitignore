@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# LaTeX build artifacts (cv-source/)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.toc
