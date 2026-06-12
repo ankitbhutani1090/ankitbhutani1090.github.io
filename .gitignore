@@ -2,6 +2,7 @@
 .DS_Store
 
 # LaTeX build artifacts (cv-source/)
+cv-source/*.pdf
 *.aux
 *.log
 *.out
@@ -11,3 +12,6 @@
 *.bbl
 *.blg
 *.toc
+
+# Project working notes (not for the public site)
+CLAUDE.md
