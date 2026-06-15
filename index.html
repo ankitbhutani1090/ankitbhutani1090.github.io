@@ -124,8 +124,23 @@
     .paper { margin: 0 0 1.5rem; }
     .paper .title { font-weight: 600; }
     .paper .coauthors { color: var(--muted); }
+    .paper .venue { margin: .15rem 0 0; font-size: .9rem; font-style: italic; color: var(--muted); }
     .paper .abstract { margin: .4rem 0 0; font-size: .95rem; }
     .paper .paper-links { margin: .4rem 0 0; font-size: .9rem; color: var(--muted); }
+
+    .paper details { margin: .4rem 0 0; }
+    .paper summary {
+      display: inline-block;
+      cursor: pointer;
+      font-size: .9rem;
+      color: var(--accent);
+      list-style: none;
+    }
+    .paper summary::-webkit-details-marker { display: none; }
+    .paper summary::after { content: " ▸"; font-size: .8em; }
+    .paper details[open] summary::after { content: " ▾"; font-size: .8em; }
+    .paper summary:hover { text-decoration: underline; }
+    .paper details .abstract { margin: .4rem 0 0; }
 
     footer {
       margin-top: 3rem;
@@ -165,14 +180,18 @@
           Macroeconomics &middot; Production Networks &middot; Information Frictions &middot; Corporate Finance
         </p>
 
-        <h3>Working Papers</h3>
+        <h3>Publications</h3>
         <article class="paper">
           <p class="title">
             <a href="assets/BOV_missing_value_data.pdf" target="_blank" rel="noopener">The Missing Value of Data</a>
             <span class="coauthors">(with <a href="https://web.sas.upenn.edu/ordonez/" target="_blank" rel="noopener">Guillermo Ordoñez</a> and <a href="https://business.columbia.edu/lveldkamp" target="_blank" rel="noopener">Laura Veldkamp</a>)</span>
           </p>
-          <p class="abstract">Data assets are increasingly vital in modern economies, yet macroeconomic measurement is not well-adapted to capturing their value. Part of the problem is that data is an intangible asset: investments in data are missed in national accounts, and depreciation losses are missed in firms' balance sheets. Another part, unique to data, is that it serves as a means of payment in the modern economy: consumption bartered for data is also omitted from national accounts. We propose an output-based approach to measure the missing value of data. We treat data as an asset, measure its volume based on the quality of firms' revenue forecasts, and endogenously determine its depreciation. We then capitalize the data value and explore what the measured GDP would be if the data were treated and transacted similarly to a physical asset. Our findings suggest that the aggregate value of data is about 1.5% of GDP.</p>
-          <p class="paper-links"><a href="https://github.com/ankitbhutani1090/BOV_missing_value_data" target="_blank" rel="noopener">replication code</a></p>
+          <p class="venue">Forthcoming, NBER Macroeconomics Annual, vol. 41 (2026)</p>
+          <details>
+            <summary>Abstract</summary>
+            <p class="abstract">Data assets are increasingly vital in modern economies, yet macroeconomic measurement is not well-adapted to capturing their value. Part of the problem is that data is an intangible asset: investments in data are missed in national accounts, and depreciation losses are missed in firms' balance sheets. Another part, unique to data, is that it serves as a means of payment in the modern economy: consumption bartered for data is also omitted from national accounts. We propose an output-based approach to measure the missing value of data. We treat data as an asset, measure its volume based on the quality of firms' revenue forecasts, and endogenously determine its depreciation. We then capitalize the data value and explore what the measured GDP would be if the data were treated and transacted similarly to a physical asset. Our findings suggest that the aggregate value of data is about 1.5% of GDP.</p>
+          </details>
+          <p class="paper-links"><a href="https://github.com/ankitbhutani1090/BOV_missing_value_data" target="_blank" rel="noopener">Replication code</a></p>
         </article>
 
         <h3>Work in Progress</h3>
